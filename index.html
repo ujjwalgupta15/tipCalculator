@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+        <h1>Tip Calculator</h1>
+
+        <label for="bill-amount">How much is the bill?</label><br>
+        <input type="number" name="bill-amount" id="bill" placeholder="Enter your bill amount..." required><br>
+
+        <label for="tip">Rate the Service.</label><br>
+
+        <select name="tip" id="tip">
+    <option value="none">:-:-:Choose The Correct Option:-:-:</option>
+    <option value="5">⭐⭐⭐⭐⭐ - Outstanding</option>
+    <option value="4">⭐⭐⭐⭐ - Great</option>
+    <option value="3">⭐⭐⭐ - Good</option>
+    <option value="2">⭐⭐ - It was Ok</option>
+    <option value="1">⭐ - Bad</option>
+    <option value="0">😡 - Terrible</option>
+    </select>
+        <br>
+
+        <label for="no-of-people">No. of people to sharing the bill?</label><br>
+        <input type="number" name="no-of-people" id="people" placeholder="Enter number of people..." ><br>
+
+        <button id="tip-calc" onclick="calc()">Calculate</button><br>
+
+        <h2>Tip Amount</h2>
+        <h3 id="result"></h3>
+
+        <h2>Per Person Bill</h2>
+        <h3 id="result1"></h3>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
